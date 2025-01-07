@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.genz.AppTest" time="0.027" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.genz.AppTest" time="0.031" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Kelvin\Kampus\PBO\pbo\target\test-classes;C:\Kelvin\Kampus\PBO\pbo\target\classes;C:\Users\kelvi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kelvi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Kelvin\Kampus\PBO\javaProjek\javaProjek\target\test-classes;C:\Kelvin\Kampus\PBO\javaProjek\javaProjek\target\classes;C:\Users\kelvi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kelvi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\kelvi\AppData\Local\Temp\surefire18348645177585957255\surefirebooter9918912523744492976.jar C:\Users\kelvi\AppData\Local\Temp\surefire18348645177585957255 2025-01-07T08-00-07_962-jvmRun1 surefire11221925358052548949tmp surefire_011258623590269910009tmp"/>
+    <property name="sun.java.command" value="C:\Users\kelvi\AppData\Local\Temp\surefire2067864898803226342\surefirebooter5805705877678472909.jar C:\Users\kelvi\AppData\Local\Temp\surefire2067864898803226342 2025-01-07T21-53-09_291-jvmRun1 surefire11890613647139739062tmp surefire_011624286699532108546tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Kelvin\Kampus\PBO\pbo\target\test-classes;C:\Kelvin\Kampus\PBO\pbo\target\classes;C:\Users\kelvi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kelvi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Kelvin\Kampus\PBO\javaProjek\javaProjek\target\test-classes;C:\Kelvin\Kampus\PBO\javaProjek\javaProjek\target\classes;C:\Users\kelvi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kelvi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\kelvi"/>
     <property name="user.language" value="en"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2024-10-15"/>
     <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Kelvin\Kampus\PBO\pbo"/>
+    <property name="basedir" value="C:\Kelvin\Kampus\PBO\javaProjek\javaProjek"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kelvi\AppData\Local\Temp\surefire18348645177585957255\surefirebooter9918912523744492976.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kelvi\AppData\Local\Temp\surefire2067864898803226342\surefirebooter5805705877678472909.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.13+11"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\kelvi\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.13"/>
-    <property name="user.dir" value="C:\Kelvin\Kampus\PBO\pbo"/>
+    <property name="user.dir" value="C:\Kelvin\Kampus\PBO\javaProjek\javaProjek"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.genz.AppTest" time="0.007"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.genz.AppTest" time="0.002"/>
 </testsuite>
