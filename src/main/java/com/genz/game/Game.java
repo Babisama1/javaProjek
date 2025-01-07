@@ -18,37 +18,55 @@ public class Game {
 
     public void start() {
         Scanner scanner = new Scanner(System.in);
-        Player currentPlayer = player1;
 
         while (true) {
-            board.displayBoard();
-            System.out.println(currentPlayer.getName() + "'s turn (" + currentPlayer.getSymbol() + ").");
-            System.out.print("Enter row (0-2): ");
-            int row = scanner.nextInt();
-            System.out.print("Enter column (0-2): ");
-            int col = scanner.nextInt();
+            board = new Board(); // Reset papan untuk ronde baru
+            Player currentPlayer = player1;
 
-            if (row < 0 || row > 2 || col < 0 || col > 2 || !board.isCellEmpty(row, col)) {
-                System.out.println("Invalid move. Try again.");
-                continue;
+            while (true) {
+                board.displayBoard();
+                System.out.println(currentPlayer.getName() + "'s turn (" + currentPlayer.getSymbol() + ").");
+                System.out.print("Enter row (0-2): ");
+                int row = scanner.nextInt();
+                System.out.print("Enter column (0-2): ");
+                int col = scanner.nextInt();
+
+                if (row < 0 || row > 2 || col < 0 || col > 2 || !board.isCellEmpty(row, col)) {
+                    System.out.println("Invalid move. Try again.");
+                    continue;
+                }
+
+                board.markCell(row, col, currentPlayer.getSymbol());
+
+                if (board.checkWinner(currentPlayer.getSymbol())) {
+                    board.displayBoard();
+                    System.out.println("Congratulations, " + currentPlayer.getName() + "! You win this round!");
+                    currentPlayer.incrementScore(); // Tambahkan skor untuk pemenang
+                    break;
+                }
+
+                if (board.isFull()) {
+                    board.displayBoard();
+                    System.out.println("It's a tie!");
+                    break;
+                }
+
+                // Ganti giliran
+                currentPlayer = (currentPlayer == player1) ? player2 : player1;
             }
 
-            board.markCell(row, col, currentPlayer.getSymbol());
+            // Tampilkan skor setelah ronde selesai
+            System.out.println("\nCurrent Scores:");
+            System.out.println(player1.getName() + ": " + player1.getScore());
+            System.out.println(player2.getName() + ": " + player2.getScore());
 
-            if (board.checkWinner(currentPlayer.getSymbol())) {
-                board.displayBoard();
-                System.out.println("Congratulations, " + currentPlayer.getName() + "! You win!");
+            // Tanyakan apakah ingin bermain lagi
+            System.out.print("Do you want to play another round? (yes/no): ");
+            String choice = scanner.next();
+            if (!choice.equalsIgnoreCase("yes")) {
+                System.out.println("Thank you for playing!");
                 break;
             }
-
-            if (board.isFull()) {
-                board.displayBoard();
-                System.out.println("It's a tie!");
-                break;
-            }
-
-            // Switch turn
-            currentPlayer = (currentPlayer == player1) ? player2 : player1;
         }
 
         scanner.close();
