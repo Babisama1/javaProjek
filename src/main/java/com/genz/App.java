@@ -1,20 +1,16 @@
 package com.genz;
 
-import com.genz.game.Game;
-import com.genz.player.Player;
+import com.genz.model.ModelExample;
+import com.genz.service.ServiceExample;
 
 /**
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        Player player1 = new Player("Player 1", 'X');
-        Player player2 = new Player("Player 2", 'O');
-
-        Game game = new Game(player1, player2);
-        game.start();
+public class App {
+    public static void main(String[] args) {
+        ModelExample model = new ModelExample("Hello from Model!");
+        ServiceExample service = new ServiceExample();
+        service.printMessage(model);
     }
 }
