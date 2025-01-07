@@ -1,3 +1,5 @@
-com\genz\service\ServiceExample.class
+com\genz\board\Board.class
 com\genz\App.class
-com\genz\model\ModelExample.class
+com\genz\player\AIPlayer.class
+com\genz\player\Player.class
+com\genz\game\Game.class
